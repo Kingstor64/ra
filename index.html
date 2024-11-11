@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin:0; overflow:hidden;">
+    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+
+        <a-marker type="pattern" url="marcadores/1.patt">
+            <a-entity position="0 0 0" geometry="primitive: box; width: 0.5; height: 0.5" material="src: url(https://cdn.glitch.me/c06e7f9b-1cbe-48bf-a64f-92f6bc940607/arenar.jpg?v=1729876731014)"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="marcadores/2.patt">
+            <a-entity position="0 0 0" geometry="primitive: box; width: 0.5; height: 0.5" material="https://cdn.glitch.me/c06e7f9b-1cbe-48bf-a64f-92f6bc940607/arenar.jpg?v=1729876731014"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="marcadores/3">
+            <a-entity position="0 0 0" geometry="primitive: box; width: 0.5; height: 0.5" material="https://cdn.glitch.me/c06e7f9b-1cbe-48bf-a64f-92f6bc940607/arenar.jpg?v=1729876731014;"></a-entity>
+        </a-marker>
+
+        <a-marker type="pattern" url="marcadores/4.patt">
+            <a-entity position="0 0 0" geometry="primitive: box; width: 0.5; height: 0.5" material="https://cdn.glitch.me/c06e7f9b-1cbe-48bf-a64f-92f6bc940607/arenar.jpg?v=1729876731014"></a-entity>
+        </a-marker>
+
+
+        <a-marker>
+            <a-entity position="" geometry="" material="src: texturas/arena.jpg; roughnessMap: texturas/arena.jpg; normalMap: texturas/arena.jpg; repeat: 0.5 0.5" scale="13 0.5 13" visible="">
+            </a-entity>
+            <a-entity position="10.4 0 0" geometry="" material="src: texturas/agua.jpg; roughnessMap: texturas/agua.jpg; normalMap: texturas/agua.jpg; repeat: 0.5 0.5" scale="8 0.5 13" visible="">
+            </a-entity>
+
+            <a-entity geometry="primitive: cylinder" material="src: texturas/madera.jpg; roughnessMap: texturas/madera.jpg; normalMap: texturas/madera.jpg; repeat: 0.5 0.5" position="-2.72131 3.4618 -2.30761" shadow="" scale="0.388 7.392 0.376"></a-entity>
+            <a-entity geometry="primitive: cylinder" material="src: texturas/madera.jpg; roughnessMap: texturas/madera.jpg; normalMap: texturas/madera.jpg; repeat: 0.5 0.5" position="-1.20263 3.46753 -5.04104" shadow="" scale="0.388 7.39161 0.37607"></a-entity>
+            <a-entity geometry="primitive: cylinder" material="src: texturas/madera.jpg; roughnessMap: texturas/madera.jpg; normalMap: texturas/madera.jpg; repeat: 0.5 0.5" position="2.32348 3.66023 -2.26791" shadow="" scale="0.7 7 0.7"></a-entity>
+            <a-entity geometry="primitive: cylinder" material="src: texturas/madera.jpg; roughnessMap: texturas/madera.jpg; normalMap: texturas/madera.jpg; repeat: 0.5 0.5" position="3.99603 3.53466 0.73104" shadow="" scale="0.388 7.392 0.376"></a-entity>
+            <a-entity geometry="primitive: cylinder" material="src: texturas/madera.jpg; roughnessMap: texturas/madera.jpg; normalMap: texturas/madera.jpg; repeat: 0.5 0.5" position="0.93592 3.76414 2.51614" shadow="" scale="0.388 7.392 0.376"></a-entity>
+
+
+            <a-entity geometry="" material="src: texturas/hojas.jpg; roughnessMap: texturas/hojas.jpg; normalMap: texturas/hojas.jpg; repeat: 0.5 0.5" position="-1.32185 7.021 -5.18216" shadow="" scale="2 0.5 2" rotation=""></a-entity>
+            <a-entity geometry="" material="src: texturas/hojas.jpg; roughnessMap: texturas/hojas.jpg; normalMap: texturas/hojas.jpg; repeat: 0.5 0.5" position="-2.72131 7.10463 -2.1946" shadow="" scale="3 0.5 3" rotation=""></a-entity>
+            <a-entity geometry="" material="src: texturas/hojas.jpg; roughnessMap: texturas/hojas.jpg; normalMap: texturas/hojas.jpg; repeat: 0.5 0.5" position="2.28929 7.1218 -2.34772" shadow="" scale="3 2 3" rotation=""></a-entity>
+            <a-entity geometry="" material="src: texturas/hojas.jpg; roughnessMap: texturas/hojas.jpg; normalMap: texturas/hojas.jpg; repeat: 0.5 0.5" position="0.85463 7.00814 2.45562" shadow="" scale="3 1 3" rotation=""></a-entity>
+            <a-entity geometry="" material="src: texturas/hojas.jpg; roughnessMap: texturas/hojas.jpg; normalMap: texturas/hojas.jpg; repeat: 0.5 0.5" position="4.03745 7.021 0.65207" shadow="" scale="2 0.5 2" rotation=""></a-entity>
+
+            
+            <a-entity position="-9.91829 0 0" geometry="" material="src: texturas/tablas.jpg; roughnessMap: texturas/tablas.jpg; normalMap: texturas/tablas.jpg; repeat: 0.5 0.5" scale="6.93074 0.5 13" visible="">
+            </a-entity>
+            <a-entity position="-9.91829 4.40298 6.06676" geometry="" material="src: texturas/tablas.jpg; roughnessMap: texturas/tablas.jpg; normalMap: texturas/tablas.jpg; repeat: 0.5 0.5" scale="6.93074 8.92068 0.77865" visible="">
+            </a-entity>
+            <a-entity position="-9.91829 4.40298 -6.10729" geometry="" material="src: texturas/tablas.jpg; roughnessMap: texturas/tablas.jpg; normalMap: texturas/tablas.jpg; repeat: 0.5 0.5" scale="6.93074 8.92068 0.77865" visible="">
+            </a-entity>
+            <a-entity position="-12.81867 4.403 0" geometry="" material="src: texturas/tablas.jpg; roughnessMap: texturas/tablas.jpg; normalMap: texturas/tablas.jpg; repeat: 0.5 0.5" scale="1.16984 8.921 13" visible="">
+            </a-entity>
+
+            <a-entity position="-10.669 12.194 0.000" geometry="primitive: cone" material="src: texturas/palma.jpg; roughnessMap: texturas/tablas.jpg; normalMap: texturas/tablas.jpg; repeat: 0.5 0.5" scale="10 6.73509 10"></a-entity>
+        </a-marker>
+
+        
+
+        
+
+        <a-entity camera></a-entity>
+        
+    </a-scene>
+</body>
+</html>
